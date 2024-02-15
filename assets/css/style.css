@@ -1,3 +1,110 @@
 body {
   font-family: "DM Mono", sans-serif;
 }
+
+main {
+  display: flex;
+  padding: 2rem;
+  margin: 1rem;
+  justify-content: flex-start;
+}
+
+footer {
+  display: flex;
+  font-weight: light;
+  font-size: 1rem;
+  justify-content: flex-start;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 0.8rem;
+}
+
+footer ul li a {
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+header .page-title {
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+header .navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-inline: auto;
+}
+
+header .navbar-container .nav-list li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+header .navbar-container .nav-list li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease-in-out;
+  font-weight: 450;
+}
+
+header .navbar-container .nav-list li a:hover {
+  background-color: black;
+  color: white;
+  padding: 0.4rem;
+}
+
+#content {
+  margin-right: 2rem;
+  align-self: center;
+}
+
+#content p {
+  text-align: justify;
+}
+
+#content a {
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+#content a:hover {
+  background-color: black;
+  color: white;
+  padding: 0.4rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-self: auto;
+}
+
+aside .profile h2,
+p {
+  text-align: center;
+  margin-top: 1px;
+}
+
+aside .profile figure img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    order: -1;
+    flex-direction: column;
+    margin-top: 1rem;
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+}
