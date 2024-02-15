@@ -108,3 +108,55 @@ aside .profile figure img {
     margin-bottom: 3rem;
   }
 }
+
+.popUp {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popUp-content {
+  background-color: #fefefe;
+  position: relative;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center; /* Center text content */
+}
+
+.popUp-content p {
+  margin-bottom: 0px;
+}
+
+.popUp-content p a {
+  color: black;
+}
+
+.popUp-content p a:hover {
+  background-color: black;
+  color: white;
+  padding: 0.4rem;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-right: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+
+    <script src="assets/js/app.js"></script>
   </head>
 
   <body>
@@ -91,11 +93,7 @@
 
     <footer>
       <ul>
-        <li>
-          <a href="mailto:daffapasya1@gmail.com" target="_blank"
-            >contact/inquiries</a
-          >
-        </li>
+        <li><a id="contactLink" href="#">contact/inquiries</a></li>
         <li>
           <a href="https://www.linkedin.com/in/daffapasya/" target="_blank"
             >linkedin</a
@@ -113,5 +111,15 @@
         </li>
       </ul>
     </footer>
+
+    <div id="myPopUp" class="popUp">
+      <div class="popUp-content">
+        <span class="close">&times;</span>
+        <p id="popUpText">
+          You are going to contact this email: <span id="popupEmail"></span>.
+          <a id="popupLink" href="#">Please proceed here.</a>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
